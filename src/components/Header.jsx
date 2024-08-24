@@ -12,12 +12,6 @@ export default function Header() {
     useGSAP(
         () => {
             // gsap code here...
-            gsap.to(".Header", {
-              duration: 15,  // Duration of the full rotation
-              backgroundPosition: "200% 0%, 0% 200%, 200% 200%, 0% 0%",
-              repeat: -1,    // Repeat indefinitely
-              ease: "linear" // Linear motion for a smooth effect
-            })
             gsap.from(".Circle", {
               x: "100vw",
               // y: -300,
@@ -52,13 +46,13 @@ export default function Header() {
             <svg className='Circle' xmlns="http://www.w3.org/2000/svg">
   <circle cx="50" cy="50" r="40" />
 </svg>
-<div className='Languages'><span class="material-symbols-outlined">
+<div className='Languages'><span className="material-symbols-outlined">
 javascript
 </span>
-<span class="material-symbols-outlined">
+<span className="material-symbols-outlined">
 php
 </span>
-<span  class="material-symbols-outlined">
+<span  className="material-symbols-outlined">
 css
 </span></div></div>
 

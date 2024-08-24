@@ -13,13 +13,12 @@ export default function About() {
 
   // useGSAP(
   //     () => {
-  //         // gsap code here...
-  gsap.to(".Overlay", {
-    duration: 15, // Duration of the full rotation
-    backgroundPosition: "200% 0%, 0% 200%, 200% 200%, 0% 0%",
-    repeat: -1, // Repeat indefinitely
-    ease: "linear", // Linear motion for a smooth effect
-  });
+  // gsap.to(".Overlay", {
+  //   duration: 15, // Duration of the full rotation
+  //   backgroundPosition: "200% 0%, 0% 200%, 200% 200%, 0% 0%",
+  //   repeat: -1, // Repeat indefinitely
+  //   ease: "linear", // Linear motion for a smooth effect
+  // });
 
   //     },
   //     { scope: aboutSection }
@@ -27,7 +26,6 @@ export default function About() {
 
   return (
     <div className="About">
-        <div className="Overlay"></div>
       <div ref={aboutSection} className="About-inner">
         <div className="Summary Frosted-Glass">
           <h2>About Me</h2>

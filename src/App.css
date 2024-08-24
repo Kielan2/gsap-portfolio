@@ -192,12 +192,11 @@ p {
 
 /* About Section */
 .About {
-  /* background: radial-gradient(circle, rgba(46, 0, 18, 0.9), rgba(27, 0, 96, 0.85)); */
   color: #b9b8bb;
   background: linear-gradient(0deg, rgba(42, 0, 149, 0.757), rgb(26, 26, 26));
-
   padding: 5rem 3vw;
 }
+
 
 .About-inner {
   display: flex;
@@ -225,6 +224,25 @@ p {
   gap: 1rem;
 }
 
+
+
+.Cards div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 25vh;  
+  
+}
+
+.Cards div img {
+  max-height: 10vh;  
+  object-fit: contain;
+  max-width: 100%;
+  opacity: .65;
+  transition: opacity 0.5s ease-in-out;
+}
+
 .Frosted-Glass {
   background: rgba(255, 255, 255, 0.1); /* Semi-transparent white */
   backdrop-filter: blur(10px); /* Apply the blur effect */
@@ -244,25 +262,6 @@ p {
   }
 }
 
-
-.Cards div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  min-height: 25vh;  
-  
-}
-
-
-
-.Cards div img {
-  max-height: 10vh;  
-  object-fit: contain;
-  max-width: 100%;
-  opacity: .65;
-  transition: opacity 0.5s ease-in-out;
-}
 
 .Cards div:hover {
   background: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
@@ -336,3 +335,4 @@ p {
     width: 40%;
   }
 }
+
