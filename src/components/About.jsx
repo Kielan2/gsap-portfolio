@@ -1,33 +1,14 @@
-import { useRef } from "react";
+import React from "react";
 import SLCC from '../images/images.png'
 import Boostability from '../images/boostability.webp'
 import devs from '../images/devs.png'
 
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-
-gsap.registerPlugin(useGSAP);
-
 export default function About() {
-  const aboutSection = useRef();
-
-  // useGSAP(
-  //     () => {
-  // gsap.to(".Overlay", {
-  //   duration: 15, // Duration of the full rotation
-  //   backgroundPosition: "200% 0%, 0% 200%, 200% 200%, 0% 0%",
-  //   repeat: -1, // Repeat indefinitely
-  //   ease: "linear", // Linear motion for a smooth effect
-  // });
-
-  //     },
-  //     { scope: aboutSection }
-  // );
 
   return (
     <div className="About">
-      <div ref={aboutSection} className="About-inner">
-        <div className="Summary Frosted-Glass">
+      <div className="About-inner">
+        <div className="Summary Frost">
           <h2>About Me</h2>
           <p>
             I'm a passionate Software Engineer based in the vibrant city of Salt
@@ -49,21 +30,21 @@ export default function About() {
         </div>
       
       <div className="Experience">
-        <h3 className="Frosted-Glass">My Experience</h3>
+        <h3 className="Frost">My Experience</h3>
         <div className="Cards">
-        <div className="Frosted-Glass">
+        <div className="Frost">
   <img className='White-image' src="https://onlineimage.com/wp-content/uploads/2021/09/logo-oi.svg" alt="Logo" />
   <p>Front End Developer</p>
 </div>
-<div className="Frosted-Glass">
+<div className="Frost">
 <img className='White-image' src={Boostability} alt="Boostability Logo" />
   <p>Web Developer</p>
 </div>
-<div className="Frosted-Glass">
+<div className="Frost">
 <img className='Grey-image'  src={devs} alt="devs Logo" />
   <p>Bootcamp</p>
 </div>
-<div className="Frosted-Glass">
+<div className="Frost">
 <img className='White-image' src={SLCC} alt="SLCC Logo" />
   <p>Associate's Degree</p>
 </div>
